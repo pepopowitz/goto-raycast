@@ -5,41 +5,39 @@
 // }
 
 exports.urlMap = {
-  staging: {
-    '': 'https://staging.artsy.net',
-    cms: 'https://cms-staging.artsy.net/',
-    oldadmin: 'https://admin-staging.artsy.net/',
-    partners: 'https://admin-partners-staging.artsy.net/',
-  },
   prod: {
-    '': 'https://artsy.net',
-    cms: 'https://cms.artsy.net/',
-    oldadmin: 'https://admin.artsy.net',
-    partners: 'https://admin-partners.artsy.net/',
+    '': 'https://docs.camunda.io/',
   },
-  mail: 'https://mail.google.com',
-  calendar: 'https://calendar.google.com',
-  oncall:
-    'https://artsy.app.opsgenie.com/settings/schedule/detail/aa7d47fa-ab67-4c09-b9ca-d43a20efbb04',
-  backlog:
-    'https://artsyproduct.atlassian.net/secure/RapidBoard.jspa?rapidView=36&view=planning&issueLimit=100',
-  sprint:
-    'https://artsyproduct.atlassian.net/secure/RapidBoard.jspa?rapidView=36',
+  staging: {
+    '': 'https://stage.docs.camunda.io/',
+  },
+  trello: {
+    '': 'https://trello.com',
+    tasks:
+      'https://trello.com/b/taSm3IvQ/devrel-task-board?filter=member:stevenhicksatcamunda',
+  },
+  confluence: {
+    '': 'https://confluence.camunda.com',
+  },
   gh: {
     '': 'https://github.com',
-    '*': 'https://github.com/artsy/{0}',
-    '**': 'https://github.com/artsy/{0}/{1}',
-    prs: 'https://github.com/notifications/beta',
-    pulls: 'https://github.com/notifications/beta',
+    // '*': 'https://github.com/artsy/{0}',
+    // '**': 'https://github.com/artsy/{0}/{1}',
+    pulls: 'https://github.com/notifications',
     me: {
       '': 'https://github.com/pepopowitz',
       '*': `https://github.com/pepopowitz/{0}`,
       '**': 'https://github.com/pepopowitz/{0}/{1}',
     },
-    artsy: {
-      '': 'https://github.com/artsy/',
-      '*': 'https://github.com/artsy/{0}',
-      '**': 'https://github.com/artsy/{0}/{1}',
+    c8: {
+      '': 'https://github.com/camunda-cloud/',
+      '*': 'https://github.com/camunda-cloud/{0}',
+      '**': 'https://github.com/camunda-cloud/{0}/{1}',
+      // this doesn't work!!! figure out why.
+      docs: {
+        '': 'https://github.com/camunda-cloud/camunda-cloud-documentation',
+        '*': 'https://github.com/camunda-cloud/camunda-cloud-documentation/{0}',
+      },
     },
   },
 };
