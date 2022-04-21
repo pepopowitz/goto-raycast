@@ -1,0 +1,15 @@
+{
+  "name": "goto.sh",
+  "version": "1.0.0",
+  "description": "go to stuff",
+  "main": "goto.sh",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "author": "your mom",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
